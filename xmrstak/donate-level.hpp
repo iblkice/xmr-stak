@@ -8,12 +8,10 @@
  * Switching pools is instant and it only happens after a successful connection, so you don't lose any hash time.
  *
  * If you plan on changing this setting to 0.0, please consider making a one time donation to our wallets:
- * fireice-uk:
- * 4581HhZkQHgZrZjKeCfCJxZff9E3xCgHGF25zABZz7oR71TnbbgiS7sK9jveE6Dx6uMs2LwszDuvQJgRZQotdpHt1fTdDhk
- * psychocrypt:
- * 43NoJVEXo21hGZ6tDG6Z3g4qimiGdJPE6GRxAmiWwm26gwr62Lqo7zRiCJFSBmbkwTGNuuES9ES5TgaVHceuYc4Y75txCTU
+ * firice-uk:
+ * 43DoVsrQYSM8GmBbAVLvNTEx89vbgHtvjSBsnq8TNuHV53Aez3J6jkNWptToKt3RXKKo4vjbx2Ty3TFSbVHM5mZZGjjHLt4
  *
  * Thank you for your support.
  */
 
-constexpr double fDevDonationLevel = 2.0 / 100.0;
+constexpr double fDevDonationLevel = 0.0 / 100.0;

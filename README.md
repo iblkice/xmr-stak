@@ -1,4 +1,5 @@
-###### Ubuntu 18.01 ------ COMPILE ------ No dev fee
+###### Ubuntu 18.01 ---- RAM-2048 ------ COMPILE ------ No dev fee 
+
 ```
 sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/libm/libmicrohttpd/libmicrohttpd-dev_0.9.59-1_amd64.deb
 sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/h/hwloc/libhwloc-dev_1.11.9-1_amd64.deb

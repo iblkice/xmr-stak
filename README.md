@@ -11,7 +11,7 @@
 * cmake ..
 (with AMD/CUDA or)
 * cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
-(without AMD/CUDA)
+without AMD/CUDA)
 * make install
 
 

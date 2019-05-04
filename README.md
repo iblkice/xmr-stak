@@ -1,18 +1,41 @@
+I noticed that if you set Dev donation to 0 I lost .33% of my hashrate
+EX: Xeon E5-2420 2C/2T, cpu.txt set to use only 2C/0T I was getting 78 H/s, Now I am getting 50 H/s
+
 ###### Ubuntu 18.01 ---- RAM-2048 ------ COMPILE ------ No dev fee 
 
 ```
 sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/libm/libmicrohttpd/libmicrohttpd-dev_0.9.59-1_amd64.deb
 sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/h/hwloc/libhwloc-dev_1.11.9-1_amd64.deb
-sudo dpkg -i libhwloc-dev_1.11.9-1_amd64.deb
+sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/libm/libmicrohttpd/libmicrohttpd12_0.9.59-1_amd64.deb
+
+sudo dpkg -i libmicrohttpd12_0.9.59-1_amd64.deb
 sudo dpkg -i libmicrohttpd-dev_0.9.59-1_amd64.deb
+
+libhwloc5
+sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/libhwloc5_1.11.9-1_amd64.deb
+sudo dpkg -i libhwloc5_1.11.9-1_amd64.deb
+
+libnuma1
+sudo wget http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/libnuma1_2.0.11-2.1_amd64.deb
+sudo dpkg -i libnuma1_2.0.11-2.1_amd64.deb
+
+libnuma-dev
+sudo wget http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/libnuma-dev_2.0.11-2.1_amd64.deb
+sudo dpkg -i libnuma-dev_2.0.11-2.1_amd64.deb
+
+sudo dpkg -i libhwloc-dev_1.11.9-1_amd64.deb
+
 sudo apt install libgcrypt-dev libgnutls28-dev libssl-dev cmake build-essential
+
 git clone https://github.com/iblkice/xmr-stak.git
 mkdir xmr-stak/build
 cd xmr-stak/build
+
 cmake ..
 (with AMD/CUDA or)
 cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
-without AMD/CUDA)
+(without AMD/CUDA or)
+
 make install
 
 ```

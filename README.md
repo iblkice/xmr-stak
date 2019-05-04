@@ -1,20 +1,19 @@
 Ubuntu 18.01 ------ COMPILE ------ No dev fee
 
-> sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/libm/libmicrohttpd/libmicrohttpd-dev_0.9.59-1_amd64.deb
-> sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/h/hwloc/libhwloc-dev_1.11.9-1_amd64.deb
-> sudo dpkg -i libhwloc-dev_1.11.9-1_amd64.deb
-> sudo dpkg -i libmicrohttpd-dev_0.9.59-1_amd64.deb
-> sudo apt install libgcrypt-dev libgnutls28-dev libssl-dev cmake build-essential
-> git clone https://github.com/iblkice/xmr-stak.git
-> mkdir xmr-stak/build
-> cd xmr-stak/build
+sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/libm/libmicrohttpd/libmicrohttpd-dev_0.9.59-1_amd64.deb
+sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/h/hwloc/libhwloc-dev_1.11.9-1_amd64.deb
+sudo dpkg -i libhwloc-dev_1.11.9-1_amd64.deb
+sudo dpkg -i libmicrohttpd-dev_0.9.59-1_amd64.deb
+sudo apt install libgcrypt-dev libgnutls28-dev libssl-dev cmake build-essential
+git clone https://github.com/iblkice/xmr-stak.git
+mkdir xmr-stak/build
+cd xmr-stak/build
 
-> cmake ..
+cmake ..
 (with AMD/CUDA or)
-> cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
-(without AMD/CUDA or)
-
-> make install
+cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
+(without AMD/CUDA)
+make install
 
 
 

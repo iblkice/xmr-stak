@@ -1,5 +1,6 @@
 I noticed that if you set Dev donation to 0 I lost .33% of my hashrate
 EX: Ubuntu VM - Xeon E5-2420 2C/2T QuadCore, cpu.txt set to use only 2C/0T I was getting 75 H/s avg, Now I am getting 50 H/s avg
+EX: Ubuntu VM - Xeon E5-2420 2C/2T QuadCore, cpu.txt set to use only 2C/2T I now get 60-75 h/s 
 
 ###### Ubuntu 18.01 ---- RAM-2048 ------ COMPILE ------ No dev fee 
 

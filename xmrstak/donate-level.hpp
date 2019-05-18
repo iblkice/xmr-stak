@@ -14,4 +14,4 @@
  * Thank you for your support.
  */
 
-constexpr double fDevDonationLevel = .01;
+constexpr double fDevDonationLevel = .1;
